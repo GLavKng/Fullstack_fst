@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-UserMngSysApplication<user-mng-sys>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.RCTR.usersys.UserMngSysApplication",
+            "projectName": "user-mng-sys",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

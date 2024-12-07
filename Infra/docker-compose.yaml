@@ -1,0 +1,24 @@
+services:
+    database:
+        image: mysql:8.4.0
+        restart: always
+        container_name: database
+        environment:
+            MYSQL_DATABASE: 'user_mng_sys'
+            MYSQL_USER: 'user'
+            MYSQL_PASSWORD: '122345678'
+            MYSQL_ROOT_PASSWORD: '122345678'
+        ports:
+            - "3306:3306"
+        volumes:
+            - starter_kit_db:/var/lib/mysql
+        networks:
+            - app_net
+networks:
+    app_net:
+        driver: bridge
+volumes:
+    starter_kit_db:
+
+
+

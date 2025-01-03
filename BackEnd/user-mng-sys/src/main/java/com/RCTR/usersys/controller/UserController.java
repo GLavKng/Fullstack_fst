@@ -35,7 +35,10 @@ public User saveUser(@RequestBody User user){
 
 @GetMapping("/users")
 public List<User> getAllUsers(){
-        return userService.getAllUsers();
+    List<User> users = userService.getAllUsers();
+    System.out.println("Users from service: " + users);
+    return users;
+       // return userService.getAllUsers();
 }
 
 @GetMapping("/users/{id}")

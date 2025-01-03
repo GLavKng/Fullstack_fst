@@ -6,8 +6,8 @@ services:
         environment:
             MYSQL_DATABASE: 'user_mng_sys'
             MYSQL_USER: 'user'
-            MYSQL_PASSWORD: '122345678'
-            MYSQL_ROOT_PASSWORD: '122345678'
+            MYSQL_PASSWORD: 'user1221'
+            MYSQL_ROOT_PASSWORD: 'user3343'
         ports:
             - "3306:3306"
         volumes:
